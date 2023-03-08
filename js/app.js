@@ -33,7 +33,7 @@ searchInput.addEventListener("keyup", search);
 // fetch api
 async function getWether(name = "London") {
   let res = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=b6fc9432d9c44de183434856230803&q=${name}&days=3 `
+    `https://api.weatherapi.com/v1/forecast.json?key=b6fc9432d9c44de183434856230803&q=${name}&days=3 `
   );
   weatherData = await res.json();
   getTodayData(weatherData);
