@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/styling.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="weather-app p-5 bg-dark vh-100">
+      <div class="container position-relative z-1">
+        <div class="input-group search mx-auto position-relative">
+          <i
+            class="search-icon fas fa-search position-absolute z-1 top-50 translate-middle-y"
+          ></i>
+          <input
+            type="text"
+            class="search-input rounded-5"
+            placeholder="Search..."
+            aria-label="Search"
+            aria-describedby="basic-addon1"
+          />
+        </div>
+
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="item-today card shadow">
+                <div class="head d-flex justify-content-between px-3">
+                  <p class="the-day pt-3"></p>
+                  <p class="the-date pt-3"></p>
+                </div>
+
+                <div class="content p-3 text-white">
+                  <div class="city fs-4 fw-bold my-3 px-3"></div>
+                  <div
+                    class="temperature d-flex justify-content-between align-items-center px-3"
+                  >
+                    <p class="temperature-deg fw-bold"></p>
+                    <img class="temperature-icon" width="90" />
+                  </div>
+                  <span class="temperature-status d-block my-4 px-3"
+                    >Clear</span
+                  >
+                  <div class="temperature-info d-flex px-3">
+                    <div class="humidity d-flex align-items-baseline me-3">
+                      <i class="fas fa-umbrella pe-1"></i>
+                      <p class="humidity-deg"></p>
+                    </div>
+                    <div class="wind-speed d-flex align-items-baseline me-3">
+                      <i class="fas fa-wind pe-1"></i>
+                      <p class="wind-speed-deg"></p>
+                    </div>
+                    <div class="direction d-flex align-items-baseline me-3">
+                      <i class="far fa-compass pe-1"></i>
+
+                      <p class="direction-deg"></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4">
+              <div class="next-day card shadow text-center h-100">
+                <div class="head">
+                  <p class="the-day pt-3"></p>
+                </div>
+                <div class="content p-4 text-white">
+                  <div class="next-day-icon px-3">
+                    <img class="temperature-icon" width="90" />
+                  </div>
+                  <div class="temperature">
+                    <p class="max-deg fs-3"></p>
+                    <p class="min-deg mb-4"></p>
+                  </div>
+                  <span
+                    class="temperature-status d-inline-block mb-4 px-3"
+                  ></span>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="next-day card shadow text-center h-100">
+                <div class="head">
+                  <p class="the-day pt-3"></p>
+                </div>
+                <div class="content p-4 text-white">
+                  <div class="next-day-icon px-3">
+                    <img class="temperature-icon" width="90" />
+                  </div>
+                  <div class="temperature">
+                    <p class="max-deg fs-3"></p>
+                    <p class="min-deg"></p>
+                  </div>
+                  <span class="temperature-status d-inline-block my-3 px-3"
+                    >Clear</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
