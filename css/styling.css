@@ -1,11 +1,11 @@
-.weather-app {
+.bg-layer {
   background-image: url(../imgs/france.jpg);
   background-position: center center;
   background-size: cover;
   position: relative;
 }
 
-.weather-app::after {
+.bg-layer::after {
   content: "";
   position: absolute;
   background-color: rgba(49, 153, 171, 0.575);
@@ -14,14 +14,19 @@
   left: 0;
   right: 0;
 }
-
-.search {
-  width: 35%;
+@media (max-width: 767px) {
+  .search {
+    width: 100%;
+  }
+}
+@media (min-width:768px ){ 
+  .search{ 
+    width: 35%;
+  }
 }
 
 .search-input {
   padding: 10px 10px 10px 35px;
-  width: 100%;
   border: none;
   outline: none;
 }

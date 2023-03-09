@@ -10,15 +10,15 @@
     <title>Weather App</title>
   </head>
   <body>
-    <div class="weather-app p-5 bg-dark vh-100">
-      <div class="container position-relative z-1">
-        <div class="input-group search mx-auto position-relative">
+    <div class="bg-layer p-5 bg-dark min-vh-100">
+      <div class="weather-app position-relative z-1">
+        <div class="search container input-group mx-auto">
           <i
-            class="search-icon fas fa-search position-absolute z-1 top-50 translate-middle-y"
+            class="search-icon ps-2 fas fa-search position-absolute top-50 translate-middle-y"
           ></i>
           <input
             type="text"
-            class="search-input rounded-5"
+            class="search-input w-100 rounded-5"
             placeholder="Search..."
             aria-label="Search"
             aria-describedby="basic-addon1"
@@ -26,7 +26,7 @@
         </div>
 
         <div class="container mt-5">
-          <div class="row">
+          <div class="row g-4">
             <div class="col-md-4">
               <div class="item-today card shadow">
                 <div class="head d-flex justify-content-between px-3">
